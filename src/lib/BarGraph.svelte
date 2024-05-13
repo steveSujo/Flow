@@ -29,7 +29,7 @@ $: barwidth = innerWidth / (data.length + 3);
 	<g bind:this={gy} transform="translate({marginLeft},0)" />
     <g>
 		{#each data as d, i}
-        {console.log(y(d),y(0))}
+        <!-- {console.log(y(d),y(0))} -->
         {#if d > 0}
         <rect class="fill-success" key={i} x={x(i) - 10} y={y(d)} width={barwidth} height={y(0)-y(d)}  />
         {:else}

@@ -1,6 +1,7 @@
 <script lang="ts">
-	export let rows: object[];
+	export let rows: string[][];
 	export let columns: string[];
+	let length = [...Array(columns.length).keys()];
 </script>
 
 <table class="table table-md">
@@ -14,7 +15,7 @@
     <tbody>
 	{#each rows as row}
 		<tr class="tablerow">
-	{#each columns as column}
+	{#each length as column}
 <td>{row[column]}</td>
 	{/each}
 		</tr>

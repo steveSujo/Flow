@@ -6,12 +6,21 @@ let data = d3.ticks(2,-10,30).map(Math.tan);
 
 </script>
 
+<div class="py-2">
+
 <div class="flex justify-between my-4">
-<span class="text-2xl">Dashboard</span>
-<input type="text" placeholder="search" class="input w-full max-w-xs">
+<span class="text-3xl font-semibold">Dashboard</span>
+<div class="dropdown dropdown-end">
+
+    <div tabindex="0" role="button" class="btn btn-primary m-1">Create</div>
+    <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-200 rounded-box w-52">
+    <li><a>item 1</a></li>
+    <li><a>item 2</a></li>
+    </ul>
+</div>
 </div>
 
-<div class="stats shadow mb-4">
+<!-- <div class="stats shadow mb-4">
 <div class="stat w-96 bg-base-100 shadow-sm mx-1">
 <h1 class="stat-title">Income</h1>
 <div class="stat-value text-success">$20</div>
@@ -23,10 +32,10 @@ let data = d3.ticks(2,-10,30).map(Math.tan);
 <div class="stat-value text-error">$20</div>
 <div class="stat-desc">placeholder info</div>
 </div>
-</div>
+</div> -->
 
 <div class="flex justify-between ">
-<div class="card mr-10 w-1/2 max-w-2xl bg-base-100 shadow">
+<div class="card mr-10 w-1/2 max-w-2xl">
 
 <div class="p-0 card-body">
 <div class="card-title-padding card-title text-base-content">
@@ -123,21 +132,13 @@ paid for something
 </div>
 </div>
 
-<div class="card bg-base-100  min-w-fit w-1/2 text-base-content">
+<div class="card min-w-fit w-1/2 text-base-content">
 <div class="card-title card-title-padding">Place Holder for cashflow Chart</div>
 <div class="card-body">
 <BarGraph data={data}/>
 </div>
 </div>
 </div>
-
-<div class="card bg-base-100 shadow"> 
-<div class="card-body"> 
-<p>
-sierra
-</p>
-</div> 
-</div> 
 
 <style lang="postcss">
 
@@ -149,3 +150,5 @@ margin-top: var(--padding-card,2rem);
     }
 
 </style>
+
+</div>

@@ -4,14 +4,14 @@
 
 <div class="drawer bg-base-100 drawer-open">
     <input id="sidebar" type="checkbox" class="drawer-toggle"/>
-    <div class="drawer-content bg-base-200">
+    <div class="drawer-content bg-base">
     <!-- <label for="sidebar" class="btn btn-primary drawer-button lg:hidden">open sidebar</label> -->
 <div class="max-w-[100vw] px-10 pb-16 xl:pr-10"> <slot/>
 </div>
     </div>
 	<div class="drawer-side">
         <label for="sidebar" aria-label="close sidebar" class="drawer-overlay"></label>
-<aside class="bg-base-100 min-h-screen w-80">
+<aside class="bg-base-200 min-h-screen w-80">
 <div>
 
 </div>
@@ -28,7 +28,7 @@
 		<Sidebaritem name="Transactions" route="/transactions" />
         </li>
         <li>
-		<Sidebaritem name="Account" route="/accounts/" />
+		<Sidebaritem name="Accounts" route="/accounts/" />
         </li>
         <li>
 		<Sidebaritem name="Reports" route="/reports/" />
